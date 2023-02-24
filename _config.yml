@@ -3,3 +3,7 @@ description: Tópicos especiais em Probabilidade e Estatística
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
+collections:
+  ws:
+    output: true
+    permalink: /:path/
