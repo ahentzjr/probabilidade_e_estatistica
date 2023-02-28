@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<h1><a name="summary">Índice</a></h1>
+{% assign parent = "/" %}
+{% assign nest_idx = 0 %}
+{% assign current_title = "" %}
+{% for chapter in site.data.sections %}
+	{% assign this_nest_idx = chapter.path | split: "/" %}
+	{% assign this_nest_idx_size = this_nest_idx | size %}
+	{% if this_nest_idx_size > nest_idx %}
+		{% assign dif = this_nest_idx_size | minus: nest_idx %}
+		{% for idx in (1..dif) %}
+			<ul>
+			{% assign current_title = current_title | append: "/" | append: this_nest_idx[nest_idx] %}
+			{% assign nest_idx = nest_idx | plus: 1 %}
+		{% endfor %}
+	{% endif %}
+	{% if this_nest_idx_size < nest_idx %}
+		{% assign dif = nest_idx | minus: this_nest_idx_size %}
+		{% for idx in (1..dif) %}
+			</ul>
+			{% assign nest_idx = nest_idx | minus: 1 %}
+		{% endfor %}
+		{% assign current_title = "/" | append: this_nest_idx[0] %}
+		{% assign nest_idx_minus_one = nest_idx | minus: 1 %}
+		{% for idx in (1..nest_idx_minus_one) %}
+			{% assign current_title = current_title | append: "/" | append: this_nest_idx[idx] %}
+		{% endfor %}
+	{% endif %}
+	<li>{{ chapter.name }}</li>
+	{% assign something_has_been_shown = false %}
+	{% assign this_list = site.ws %}
+	{% for file in site.ws %}
+		{% if file.url contains current_title %}
+			{% assign nbr_slashes = file.url | split: "/" | size %}
+			{% assign nbr_slashes_minus_two = nbr_slashes | minus: 2 %}
+			{% if nbr_slashes_minus_two == nest_idx %}
+				{% if something_has_been_shown == false %}
+					<ul>
+					{% assign something_has_been_shown = true %}
+				{% endif %}
+				<li><a href="{{ file.url }}#title">{{ file.short_title }}</a></li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+	{% if something_has_been_shown %}
+		</ul>
+	{% endif %}
+{% endfor %}
+</ul>

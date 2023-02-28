@@ -1,0 +1,13 @@
+- name: Probabilidade
+  nickname: prob
+  path: prob/
+  parent: /
+
+- name: Definições
+  nickname: prob_def
+  path: prob/def/
+  parent: prob
+
+- name: Estatística
+  path: stat/
+  parent: /
