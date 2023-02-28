@@ -3,6 +3,8 @@ description: Tópicos especiais em Probabilidade e Estatística
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
+url: https://ahentzjr.github.io/probabilidade_e_estatistica
+baseurl: /
 collections:
   ws:
     output: true
