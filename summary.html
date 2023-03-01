@@ -40,7 +40,7 @@ layout: default
 					<ul>
 					{% assign something_has_been_shown = true %}
 				{% endif %}
-				<li><a href="{{ file.url }}#title">{{ file.short_title }}</a></li>
+				<li><a href="{{site.url }}{{ file.url }}#title">{{ file.short_title }}</a></li>
 			{% endif %}
 		{% endif %}
 	{% endfor %}
