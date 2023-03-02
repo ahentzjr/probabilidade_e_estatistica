@@ -2,6 +2,7 @@
 title: Definição de Espaço de Amostras
 short_title: Espaço de Amostras
 layout: default
+usemathjax: true
 ---
 
 # <a name="title">{{ page.title }}</a>
@@ -18,18 +19,20 @@ Veja bem, quando estamos estudando probabilidade e estatística, estamos normalm
 É o conjunto de um ou mais possíveis resultados de um experimento.
 Esta definição é simples. É importante sempre lembrar que um evento em um experimento é uma definição bem mais geral do que um resultado isolado. Utilizando o mesmo exemplo do jogo de dados utilizado acima, podemos definir um número muito grande de possíveis eventos (dependendo da criatividade, pode-se definir infinitos eventos mesmo neste caso simples). Exemplos triviais são os eventos:
 
-A: cair “1” ao se jogar o dado uma vez;
-B: cair “5” ao se jogar o dado uma vez;
-C: cair um número par ao se jogar o dado uma vez;
-D: cair “1” ao se jogar o dado uma vez e cair “5” ao se jogar o dado uma segunda vez;
-….
+- \\(A\\): cair “1” ao se jogar o dado uma vez;
+- \\(B\\): cair “5” ao se jogar o dado uma vez;
+- \\(C\\): cair um número par ao se jogar o dado uma vez;
+- \\(D\\): cair “1” ao se jogar o dado uma vez e cair “5” ao se jogar o dado uma segunda vez;
+- ...
+
+
 Como fica evidente, pode-se criar eventos cada vez mais complexos, caso assim se deseje ou seja necessário para determinado fim.
 <br />
 De qualquer maneira, a mensagem deste post é a de que em Probabilidade e Estatística precisamos definir inicialmente um experimento. Com isso em mãos, precisamos identificar todos os potenciais resultados deste experimento. Em seguida, precisamos definir exatamente qual evento deste experimento será alvo de estudo, identificando todos os resultados do experimento que fazem parte deste evento. Somente a partir deste ponto, é que é possível de se falar sobre probabilidade.
 <br />
 
-## Espaço de Amostras \(S\)
-É o conjunto de todos os possíveis resultados de um experimento.
-Se utilizarmos novamente o mesmo exemplo do dado de 6 faces, o espaço de amostra neste caso é dado pelo conjunto S = \{ 1, 2, 3, 4, 5, 6 \}.
+## Espaço de Amostras \\(S\\)
+É o conjunto de todos os possíveis resultados de um experimento. <br />
+Se utilizarmos novamente o mesmo exemplo do dado de 6 faces, o espaço de amostra neste caso é dado pelo conjunto \\( S = \{ 1, 2, 3, 4, 5, 6 \} \\).
 
 

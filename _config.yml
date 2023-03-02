@@ -5,6 +5,8 @@ google_analytics:
 theme: jekyll-theme-architect
 url: https://ahentzjr.github.io/probabilidade_e_estatistica
 baseurl: /
+# in order to use mathjax
+markdown: kramdown
 collections:
   ws:
     output: true
