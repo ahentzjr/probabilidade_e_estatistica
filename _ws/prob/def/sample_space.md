@@ -1,6 +1,7 @@
 ---
 title: Definição de Espaço de Amostras
 short_title: Espaço de Amostras
+author: Agenor Hentz
 layout: default
 usemathjax: true
 ---
