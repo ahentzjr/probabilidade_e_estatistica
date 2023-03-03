@@ -4,6 +4,7 @@ short_title: Espaço de Amostras
 author: Agenor Hentz
 layout: default
 is_post: true
+origin_timestamp: 1677872297
 usemathjax: true
 ---
 
