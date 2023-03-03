@@ -3,6 +3,7 @@ title: Definição de Espaço de Amostras
 short_title: Espaço de Amostras
 author: Agenor Hentz
 layout: default
+is_post: true
 usemathjax: true
 ---
 
@@ -34,6 +35,6 @@ De qualquer maneira, a mensagem deste post é a de que em Probabilidade e Estat�
 
 ## Espaço de Amostras \\(S\\)
 É o conjunto de todos os possíveis resultados de um experimento. <br />
-Se utilizarmos novamente o mesmo exemplo do dado de 6 faces, o espaço de amostra neste caso é dado pelo conjunto \\( S = \{ 1, 2, 3, 4, 5, 6 \} \\).
+Se utilizarmos novamente o mesmo exemplo do dado de 6 faces, o espaço de amostra neste caso é dado pelo conjunto \\( S = \\{ 1, 2, 3, 4, 5, 6 \\} \\).
 
 

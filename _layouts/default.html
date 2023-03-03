@@ -37,8 +37,9 @@
         <section id="main-content">
           {{ content }}
 		
-
-		  {% include footer.html %}
+		  {% if page.is_post %}
+			{% include footer.html %}
+		  {% endif %}
         </section>
 
 
