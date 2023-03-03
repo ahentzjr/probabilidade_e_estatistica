@@ -8,6 +8,11 @@
   path: prob/def/
   parent: prob
 
+- name: Teoria de Conjuntos
+  nickname: conj_def_init
+  path: prob/conj/
+  parent: prob
+
 - name: Estatística
   path: stat/
   parent: /
